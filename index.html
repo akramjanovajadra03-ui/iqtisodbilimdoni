@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IQTISODIYOT BILIMDONI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="glow glow-one"></div>
+  <div class="glow glow-two"></div>
+
+  <header class="header">
+    <div class="logo">IQ<span>B</span></div>
+    <div class="header-title">IQTISODIYOT BILIMDONI</div>
+    <div class="header-label">BILIMINGIZNI SINANG</div>
+  </header>
+
+  <main class="container">
+    <section id="homeScreen" class="screen active">
+      <div class="hero">
+        <div class="hero-tag">BILIM • TAFAKKUR • TAHLIL</div>
+        <h1>IQTISODIYOT<br><span>BILIMDONI</span></h1>
+        <p>Iqtisodiy bilimlaringizni sinab ko‘ring va yangi marralarni zabt eting!</p>
+      </div>
+
+      <h2 class="section-title">DARAJANI TANLANG</h2>
+      <div class="levels">
+        <button class="level-card" data-level="beginner">
+          <span class="level-number">01</span>
+          <span class="level-icon">◈</span>
+          <strong>BOSHLANG‘ICH</strong>
+          <small>Asosiy iqtisodiy tushunchalar</small>
+          <span class="level-arrow">→</span>
+        </button>
+
+        <button class="level-card" data-level="intermediate">
+          <span class="level-number">02</span>
+          <span class="level-icon">◇</span>
+          <strong>O‘RTA</strong>
+          <small>Iqtisodiy jarayonlar va tahlil</small>
+          <span class="level-arrow">→</span>
+        </button>
+
+        <button class="level-card" data-level="advanced">
+          <span class="level-number">03</span>
+          <span class="level-icon">◆</span>
+          <strong>YUQORI</strong>
+          <small>Murakkab iqtisodiy masalalar</small>
+          <span class="level-arrow">→</span>
+        </button>
+
+        <button class="level-card" data-level="expert">
+          <span class="level-number">04</span>
+          <span class="level-icon">✦</span>
+          <strong>EKSPERT</strong>
+          <small>Chuqur bilim va iqtisodiy tahlil</small>
+          <span class="level-arrow">→</span>
+        </button>
+      </div>
+
+      <div class="rules">
+        <div><strong>10</strong><span>SAVOL</span></div>
+        <div><strong>20</strong><span>SONIYA</span></div>
+        <div><strong>4</strong><span>JAVOB VARIANTI</span></div>
+      </div>
+    </section>
+
+    <section id="quizScreen" class="screen">
+      <div class="quiz-top">
+        <button id="backButton" class="back-button">← Darajalar</button>
+        <span id="currentLevel" class="current-level"></span>
+      </div>
+
+      <div class="progress-info">
+        <span id="questionNumber">1 / 10</span>
+        <span id="timer">20 soniya</span>
+      </div>
+      <div class="progress-track"><div id="progressBar"></div></div>
+
+      <div class="question-card">
+        <div class="question-label">SAVOL</div>
+        <h2 id="questionText"></h2>
+        <div id="answers" class="answers"></div>
+        <div id="feedback" class="feedback"></div>
+        <button id="nextButton" class="main-button" disabled>Keyingi savol →</button>
+      </div>
+    </section>
+
+    <section id="resultScreen" class="screen">
+      <div class="result-card">
+        <div class="result-symbol">✦</div>
+        <div class="hero-tag">TEST YAKUNLANDI</div>
+        <h1>NATIJANGIZ</h1>
+        <div id="scoreCircle" class="score-circle">
+          <strong id="scorePercent">0%</strong>
+          <span>TO‘G‘RI JAVOB</span>
+        </div>
+        <h2 id="resultMessage"></h2>
+        <div class="result-stats">
+          <div><strong id="correctCount">0</strong><span>To‘g‘ri</span></div>
+          <div><strong id="wrongCount">0</strong><span>Noto‘g‘ri</span></div>
+          <div><strong id="totalCount">10</strong><span>Jami savol</span></div>
+        </div>
+        <button id="reviewButton" class="main-button">Javoblarni ko‘rish</button>
+        <button id="restartButton" class="secondary-button">Bosh sahifaga qaytish</button>
+      </div>
+    </section>
+
+    <section id="reviewScreen" class="screen">
+      <div class="quiz-top">
+        <button id="homeButton" class="back-button">← Bosh sahifa</button>
+        <span class="current-level">NATIJALAR TAHLILI</span>
+      </div>
+      <h2 class="section-title">JAVOBLAR TAHLILI</h2>
+      <div id="reviewList"></div>
+      <button id="againButton" class="main-button">Yangi test boshlash</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Loyiha muallifi: <strong>AKRAMJONOVA JADRA MARATOVNA</strong></p>
+    <span>IQTISODIYOT BILIMDONI © 2026</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
